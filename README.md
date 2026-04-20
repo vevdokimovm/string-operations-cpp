@@ -1,11 +1,24 @@
-# Second semester. Course "Programming : Algorithms and Data Structures". Second lab on C++.
+# string-operations-cpp
 
-Implementing *String* class via *ArraySequence* and *ListSequence* which both uses *ISequence* as interface and they both are just wrapper for basic classe as *DynamicArray* and *List*.
+C++ lab — **String data structure and operations**. Implements a custom string class built on top of sequence abstractions (Dynamic Array, Linked List), with sorting and searching capabilities.
 
-*Utils* is used for exception handling and some debug features.
+University lab.
 
-#class_name#Implementation.hpp is just file with definitions of #class_name#. I use it to separate declaration and definitions.
+## Implemented
 
-*StringVector* is a C++ string implemented via ArraySequence
+- `StringList` / `StringVector` — string containers
+- Operations: insert, delete, find, sort, concatenate
+- Generic sequence base (`ISequence<T>`, `ArraySequence`, `ListSequence`)
 
-*StringList* is a C++ string implemented via ListSequence
+## Build
+
+```bash
+mkdir build && cd build
+cmake ..
+make
+./lab
+```
+
+## License
+
+MIT
